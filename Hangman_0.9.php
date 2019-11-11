@@ -314,3 +314,5 @@ for ($Kansen = 1; $Kansen <= 10; $Kansen++) {
 // else ga een stap door met de galg/.
 //bij laatste kans ! maar bij gewonnen geen!
 //je hebt alle letters geraden!!
+
+/////////////////////////////              GITHUB UPDATE             ////////////////////////////////////
