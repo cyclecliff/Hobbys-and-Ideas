@@ -180,6 +180,12 @@ $galgwin2 = array(
     "         /       \       ",
     "  MMMMMMMMMMMMMMMMMMMMMMM", "\n"
 );
+
+
+// THIS SHOULD BE VISIBLE ON GITHUB>COM
+
+
+
 /////////////////(/\array-galgstappen-tekst/\)///////////////////////
 //////////////////////////////////////////////////////////////////////
 $GalgjeWoord = NULL;                    //placeholder galgjewoord
