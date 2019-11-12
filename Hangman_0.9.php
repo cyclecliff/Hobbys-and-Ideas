@@ -183,7 +183,7 @@ $galgwin2 = array(
 
 
 
-/////////////////(/\array-galgstappen-tekst/\)///////////////////////
+/////////    ////////(/\array-galgstappen-tekst/\)///////////////////////
 //////////////////////////////////////////////////////////////////////
 $GalgjeWoord = NULL;                    //placeholder galgjewoord
 $GalgWoordArray = array();                 //placeholde voor galgjewoord-array
