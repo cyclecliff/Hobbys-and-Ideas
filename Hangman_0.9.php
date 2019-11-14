@@ -260,7 +260,10 @@ for ($Kansen = 1; $Kansen <= 10; $Kansen++) {
         $Kansen -= 1;
         print(implode("\n", ${"galg$Kansen"}));
         echo implode($GeraaddeLettersArray);
-        array_push($gebruikteLetters, "/$GeraaddeLetterOfWoord");
+        if (!(in_array($GeraaddeLetterOfWoord, $GalgWoordArray))) {
+            array_push($gebruikteLetters, "/$GeraaddeLetterOfWoord");
+        }
+
         echo "\nGoedzo! De letter '$GeraaddeLetterOfWoord' zit erin!. (Je hebt nog " . (10 - $Kansen) . " $kans over.) \n\n";
     } elseif ($GeraaddeLetterOfWoord == $GalgjeWoord) {
         $Kansen -= 1;
