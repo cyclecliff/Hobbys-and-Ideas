@@ -287,8 +287,6 @@ for ($Kansen = 1; $Kansen <= 10; $Kansen++) {
         echo implode($GeraaddeLettersArray);
         echo "\nHelaas, de letter '$GeraaddeLetterOfWoord' zit er niet in. (Je hebt nog " . (10 - $Kansen) . " $kans.)\n\n";
 
-
-
         array_push($gebruikteLetters, "/$GeraaddeLetterOfWoord");
     } elseif ($Kansen == 10) {
         print(implode("\n", ${"galg$Kansen"}));
