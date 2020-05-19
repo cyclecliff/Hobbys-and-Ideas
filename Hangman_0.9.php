@@ -229,17 +229,17 @@ for ($Kansen = 1; $Kansen <= 10; $Kansen++) {
     }
 
     if (strlen($GeraaddeLetterOfWoord) > strlen($GalgjeWoord)) {                                            // als het MEER letters dan nodig heeft, is het sws fout en slaat hij 2 stappen over
-        $Kansen += 1;
+        $Kansen++;
         echo "\nDit woord is te lang, probeer het opnieuw (Je hebt nog " . (10 - $Kansen) . " $kans.)\n";
         print(implode("\n", ${"galg$Kansen"})); //print bijbehorende galgstap
         echo implode($GeraaddeLettersArray);
     } elseif (strlen($GeraaddeLetterOfWoord) < strlen($GalgjeWoord) && strlen($GeraaddeLetterOfWoord) > 1) { //als er MINDER letters in het woord zitten EN meer dan 1
-        $Kansen += 1;
+        $Kansen++;
         echo "\nDit woord is te kort, probeer het opnieuw (Je hebt nog " . (10 - $Kansen) . " $kans.)\n";
         print(implode("\n", ${"galg$Kansen"})); //print bijbehorende galgstaphall
         echo implode($GeraaddeLettersArray);
     } elseif ($GeraaddeLetterOfWoord != $GalgjeWoord && strlen($GeraaddeLetterOfWoord) == strlen($GalgjeWoord)) {
-        $Kansen += 1;
+        $Kansen++;
         print(implode("\n", ${"galg$Kansen"}));
         echo "\nHelaas! Dat woord is niet goed!. (Je hebt nog " . (10 - $Kansen) . " $kans over.) \n\n";
     }
@@ -257,7 +257,7 @@ for ($Kansen = 1; $Kansen <= 10; $Kansen++) {
         }
         // ben een for loop aant maken die per key de value opnieuw aanbrengt
         //print(implode($GeraaddeLettersArray));
-        $Kansen -= 1;
+        $Kansen--;
         print(implode("\n", ${"galg$Kansen"}));
         echo implode($GeraaddeLettersArray);
         if (!(in_array($GeraaddeLetterOfWoord, $GalgWoordArray))) {
@@ -266,7 +266,7 @@ for ($Kansen = 1; $Kansen <= 10; $Kansen++) {
 
         echo "\nGoedzo! De letter '$GeraaddeLetterOfWoord' zit erin!. (Je hebt nog " . (10 - $Kansen) . " $kans over.) \n\n";
     } elseif ($GeraaddeLetterOfWoord == $GalgjeWoord) {
-        $Kansen -= 1;
+        $Kansen--1;
         if ($Kansen > 4) {
             print(implode("\n", $galgwin));
         }
